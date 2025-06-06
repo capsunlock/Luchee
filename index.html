@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luchee - Fashion</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container nav-container">
+        <a class="brand">
+          <img
+            src="../projNet/images/icon-two.png"
+            alt="icon"
+            class="logo-icon"
+          />
+          <h1 class="logo-text">uchee</h1>
+        </a>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <nav id="nav" class="nav">
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About Us</a></li>
+            <li>
+              <button class="btn btn-get">Get Started</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="text">
+          <h2>
+            <span class="bright-text">Discover And </span><br />
+            <span class="gradient-text">Find Your Own </span><br />
+            <span class="dark-yellow">Fashion</span>
+          </h2>
+          <p>
+            Explore our curated collection of stylish clothing and accessories
+            tailored to your unique taste.
+          </p>
+          <button class="btn btn--ex" id="btn-ex">Explore Now</button>
+        </div>
+        <div class="image">
+          <img src="images/gown-two.jpg" loading="lazy" alt="Hero Model" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Best Selling Products -->
+    <section class="best-selling">
+      <div class="container">
+        <h3>Best Selling</h3>
+        <p>
+          Get in on the trend with our curated selection of best-selling styles.
+        </p>
+        <div class="product-grid">
+          <!-- Example Product Card -->
+          <div>
+            <div class="product-card">
+              <img
+                src="images/countdown-one.jpg"
+                loading="lazy"
+                alt="Blazer and Crop Top"
+              />
+            </div>
+            <h4>Blazer and Crop Top</h4>
+            <p>$59.99 | <span class="rating">5.0⭐</span></p>
+          </div>
+
+          <!-- More cards here -->
+          <div>
+            <div class="product-card">
+              <img
+                src="images/Topgownhatbag.jpg"
+                loading="lazy"
+                alt="Blazer and Hat"
+              />
+            </div>
+            <h4>Blazer and Hat</h4>
+            <p>$20.99 | <span class="rating">4.2⭐</span></p>
+          </div>
+
+          <div>
+            <div class="product-card">
+              <img
+                src="images/blazzershoebag-one.jpg"
+                loading="lazy"
+                alt="Blazer and Shoe"
+              />
+            </div>
+            <h4>Blazer and Shoe</h4>
+            <p>$30.99 | <span class="rating">4.0⭐</span></p>
+          </div>
+
+          <div>
+            <div class="product-card">
+              <img
+                src="images/brownblazzer-chinos.jpg"
+                loading="lazy"
+                alt="Blazer and Trouser"
+              />
+            </div>
+            <h4>Blazer and Trouser</h4>
+            <p>$53.99 | <span class="rating">4.8⭐</span></p>
+          </div>
+        </div>
+        <button class="btn btn-outline">See More</button>
+      </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="categories">
+      <div class="container" id="category-section">
+        <h3>Designer Bags For You</h3>
+        <div class="tabs">
+          <button class="tab" data-tab="sales">SALES</button
+          ><button class="tab" data-tab="hot">HOT</button>
+          <button class="tab" data-tab="new">NEW ARRIVALS</button>
+          <button class="tab" data-tab="accessories">ACCESSORIES</button>
+        </div>
+        <div class="product-grid" id="tab-content">
+          <!-- Tabbed products will load here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Exclusive Offers -->
+    <section class="offer">
+      <div class="container">
+        <div class="offer-box">
+          <img
+            src="images/top+pants.jpg"
+            loading="lazy"
+            alt="Exclusive Offer"
+          />
+          <div class="offer-text">
+            <h3>Exclusive Offer</h3>
+            <p>
+              Unlock the ultimate style upgrade with our exclusive offer. Enjoy
+              savings of up to 50% off on our New arrivals.
+            </p>
+            <div id="countdown">
+              <button id="btn-days" class="btn">
+                <span class="count-days">8</span> Days
+              </button>
+              <button id="btn-hours" class="btn">
+                <span class="count-hours">00</span> Hours
+              </button>
+              <button id="btn-mins" class="btn">
+                <span class="count-mins">00</span>Mins
+              </button>
+            </div>
+            <button class="btn">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <div class="container">
+        <h3>Feedback Corner</h3>
+
+        <div class="testimonial-grid">
+          <div class="testimonial active" data-id="0">
+            <p class="testimonial-name"><strong>Amakiss</strong></p>
+            <p>"Amazing service and quality. I'm so happy with my purchase!</p>
+          </div>
+          <div class="testimonial" data-id="1">
+            <p class="testimonial-name"><strong>Grace</strong></p>
+            <p>
+              "The customer service was top notch. Will definitely shop again."
+            </p>
+          </div>
+          <div class="testimonial" data-id="2">
+            <p class="testimonial-name"><strong>Gifty</strong></p>
+            <p>
+              "Loved and packaging and quality. Everything arrived on time."
+            </p>
+          </div>
+        </div>
+
+        <div class="testimonial-buttons">
+          <button
+            class="testimonial-btn"
+            id="prev-testimonial"
+            aria-label="Previous testimonials"
+          >
+            &lt;
+          </button>
+          <button
+            class="testimonial-btn"
+            id="next-testimonial"
+            aria-label="Next testimonial"
+          >
+            &gt;
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <main class="footer">
+        <div class="container footer-content">
+          <div class="footer-col">
+            <a class="brand" href="#">
+              <img
+                src="../projNet/images/icon-two.png"
+                alt="icon"
+                class="logo-icon"
+              />
+              <h1 class="logo-text">uchee</h1>
+            </a>
+            <p>Stay stylish. Stay connected.</p>
+            <div>
+              <input type="email" placeholder="Enter your email" />
+              <button class="btn-small">Subscribe</button>
+            </div>
+          </div>
+          <!-- Shop -->
+          <div class="footer-col">
+            <h4>Shop</h4>
+            <ul>
+              <li><a href="#">New Arrivals</a></li>
+              <li><a href="#">Best Sellers</a></li>
+              <li><a href="#">Accessories</a></li>
+            </ul>
+          </div>
+          <!-- Community -->
+          <div class="footer-col">
+            <h4>Community</h4>
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <!-- Social -->
+          <div class="footer-col">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+              <a href="#">Instagram</a>
+              <a href="#">Facebook</a>
+              <a href="#">X</a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
