@@ -549,9 +549,10 @@ header {
   background-color: #d1a306;
 }
 .social-links a {
+  margin-top: 10px;
   display: block;
-  color: #ccc;
-  text-decoration: none;
+  color: var(--black);
+  text-decoration: wavy;
   margin-bottom: 0.5rem;
   transition: color 0.3s ease;
 }
