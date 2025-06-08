@@ -5,6 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Luchee - Fashion</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      :root {
+        --bg-light: #f5f7fa;
+        --bg-dark: #1e1e1e;
+        --text-light: #222;
+        --text-dark: #eee;
+        --border-light: #ccc;
+        --border-dark: #444;
+        --link-light: #0066cc;
+        --link-dark: #66d9ef;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        .credits-section {
+          background-color: var(--bg-dark);
+          color: var(--text-dark);
+        }
+        #credits,
+        .footerr {
+          background: linear-gradient(135deg, #1e1e1e, #2a2a2a);
+          color: var(--text-dark);
+          border-top: 1px solid var(--border-dark);
+        }
+        #credits a,
+        .footerr a {
+          color: var(--link-dark);
+        }
+      }
+
+      @media (prefers-color-scheme: light), not (prefers-color-scheme: dark) {
+        #credits {
+          background: linear-gradient(135deg, var(--bg-light), #e2e8f0);
+          color: var(--text-light);
+          border-top: 1px solid var(--border-light);
+        }
+        .footerr {
+          background-color: #f0f0f0;
+          color: #555;
+        }
+        #credits a,
+        .footerr a {
+          color: var(--link-light);
+        }
+      }
+
+      #credits,
+      .footerr {
+        text-align: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 0.95em;
+        line-height: 1.4;
+        padding: 1em;
+      }
+
+      .footerr {
+        font-size: 0.85em;
+        padding: 0.6em 1em;
+      }
+    </style>
   </head>
   <body>
     <!-- Header -->
@@ -254,6 +313,21 @@
           </div>
         </div>
       </main>
+      <div class="footerr">
+        <div>
+          Website designed by
+          <a
+            href="https://x.com/official_giftyy?t=mDAc7qsy6x2jYWXmm_7qOQ&s=08"
+            target="_blank"
+            >Gift Nnabugwu</a
+          >
+          —
+          <a href="https://www.behance.net/gift_nnabugwu">🔗</a>
+        </div>
+        Website developed by
+        <a href="https://github.com/capsunlock" target="_blank">CapsUnlock</a> —
+        <a href="mailto:capsonluck@gmail.com">capsonluck@gmail.com</a>
+      </div>
     </footer>
 
     <script src="script.js"></script>

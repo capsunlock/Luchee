@@ -453,11 +453,12 @@ header {
   border-radius: 8px;
   color: var(--primary);
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 .testimonial-btn:hover {
   background-color: var(--black);
   color: var(--white);
+  transition: 0.5s;
 }
 .testimonial:hover{
   background-color: var(--primary);
@@ -475,6 +476,7 @@ header {
  .testimonial.active {
   background: var(--primary, #eab308);
   color: var(--black);
+  transition: 0.5s;
 }
 /* Footer */
 .footer {
