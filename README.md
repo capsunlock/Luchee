@@ -27,7 +27,7 @@ FEATURES:
 
 AUTHOR
 
-*giftyy*
+*Giftyy*
 Web Designer
 
 [![Email](https://img.shields.io/badge/Email-email@example.com-D14836?logo=gmail)](mailto:capsonlock@gmail.com)  
