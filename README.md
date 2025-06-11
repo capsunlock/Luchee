@@ -27,8 +27,8 @@ FEATURES:
 
 AUTHOR
 
-*Giftyy*
-Web Designer
+*Gift Nnabugwu*  
+Web Designer 
 
 [![Email](https://img.shields.io/badge/Email-email@example.com-D14836?logo=gmail)](mailto:capsonlock@gmail.com)  
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-View_Profile-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/caps-unlock-168a19270/)  
